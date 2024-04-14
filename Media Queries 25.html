@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: black;
+            display: none;
+        }
+        @media (max-width:500px){
+            #Box-1{
+                display: block;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){
+            #Box-2{
+                display: block;
+                background-color: violet;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="Box-1">me ek tablet hu</div>
+    <div class="box" id="Box-2">me iphone hu</div>
+    <div class="box" id="Box-3">me ek pc hu</div>
+    <div class="box" id="Box-4">me ek widescreen pc hu</div>
+</body>
+</html>
+
+<!-- Day30 -->
